@@ -1,0 +1,37 @@
+﻿<Window x:Class="GrafGry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GrafGry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="782" Margin="-40,53,0,-44">
+            <Label Content="Gra w Oczko" HorizontalAlignment="Left" Margin="358,20,0,0" VerticalAlignment="Top" Height="30" Width="78"/>
+            <Button Content="Start" HorizontalAlignment="Left" Margin="556,171,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+            <TextBox x:Name="Max" HorizontalAlignment="Left" Height="24" Margin="556,82,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="120" />
+            <TextBox x:Name="ListOfTokens" HorizontalAlignment="Left" Height="22" Margin="556,128,0,0" TextWrapping="Wrap" Text="4,5,6" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+            <Label Content="Max Żeton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="472,80,0,0" Width="89"/>
+            <Label x:Name ="AktualnaWartosc" Content="0" HorizontalAlignment="Left" Margin="331,246,0,0" VerticalAlignment="Top"/>
+            <Label Content="Jakie żetony mogą ustawiać" HorizontalAlignment="Left" Margin="376,128,0,0" VerticalAlignment="Top" Width="162"/>
+            <TextBox x:Name="NewToken" HorizontalAlignment="Left" Height="22" Margin="358,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="5"  />
+            <Button Content="Wrzuć" HorizontalAlignment="Left" Margin="484,306,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+            <Label x:Name ="EndGame" Visibility ="Hidden"  Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="331,215,0,0" Width="228"/>
+
+            <TextBox x:Name="Cos" HorizontalAlignment="Left" Height="23" Margin="556,38,0,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Gra do" HorizontalAlignment="Left" Margin="472,38,0,0" VerticalAlignment="Top" Width="60"/>
+            <Label x:Name ="Oponent" Content="0" HorizontalAlignment="Left" Margin="556,246,0,0" VerticalAlignment="Top"/>
+            <Button Content="Zresetuj" HorizontalAlignment="Left" Margin="601,306,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+            <Label x:Name ="MinMax" Content="Polecany ruch" HorizontalAlignment="Left" Margin="200,246,0,0" VerticalAlignment="Top"/>
+            <Button Content="Wyświetl polecany ruch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="145,304,0,0" Click="Button_Click_3"/>
+            <CheckBox x:Name="Gracz" IsChecked="true" Content="Zaczynam grę" HorizontalAlignment="Left" Margin="331,84,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
